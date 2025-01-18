@@ -79,9 +79,9 @@ body {
 
 /* Footer / CTA */
 .footer-cta {
-    background-color: #061222;
-    /* background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    background: url("bg.png") center center/cover no-repeat; */
+    /* background-color: #061222; */
+    /* background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); */
+    background: url("bck.jpg") center center/cover no-repeat; 
     color: #fff;
     padding: 2rem 0;
     text-align: center;
