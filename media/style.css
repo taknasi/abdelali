@@ -1,0 +1,124 @@
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url("bg.png") center center/cover no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+}
+
+/* Testimonials / Benefits */
+.testimonial-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Section */
+.faq-question {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    text-align: start;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+/* Footer / CTA */
+.footer-cta {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-cta h2 {
+    margin-bottom: 1rem;
+}
+
+.footer-cta p {
+    margin-bottom: 1.5rem;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  opacity: 0.95;
+  border-radius: 7px;
+}
+.gradient-bgg {
+  background: linear-gradient(135deg, #4286f4 0%, #243a6d 100%);
+  opacity: 0.95;
+  border-radius: 7px;
+}
+
+.package-card {
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-tag {
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}

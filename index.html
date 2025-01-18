@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صفحة الهبوط - عروض التسويق الشبكي</title>
+    <title>انطلق بأعمالك في مجال التسويق الشبكي</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -27,111 +27,7 @@
     />
 
     <!-- Custom Styles (Inline for demo; ideally place in a separate .css file) -->
-    <style>
-      body {
-        font-family: "Cairo", sans-serif;
-        background-color: #f8f9fa;
-        color: #212529;
-        margin: 0;
-        padding: 0;
-      }
-
-      /* Hero Section */
-      .hero-section {
-        background: url("media/bg.png") center center/cover no-repeat;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #fff;
-        position: relative;
-      }
-
-      .hero-section::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .hero-content {
-        position: relative;
-        z-index: 1;
-        padding: 20px;
-      }
-
-      .hero-content h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
-
-      .hero-content p {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-      }
-
-      .cta-btn {
-        font-size: 1rem;
-        font-weight: 600;
-        padding: 0.75rem 1.5rem;
-        border-radius: 50px;
-      }
-
-      /* Package Cards */
-      .package-card {
-        transition: transform 0.3s;
-      }
-
-      .package-card:hover {
-        transform: translateY(-5px);
-      }
-
-      /* Testimonials / Benefits */
-      .testimonial-card {
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      /* FAQ Section */
-      .faq-question {
-        cursor: pointer;
-        background-color: #fff;
-        border: none;
-        text-align: start;
-        width: 100%;
-        padding: 0.75rem 1rem;
-        font-size: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .faq-answer {
-        display: none;
-        padding: 0 1rem 1rem 1rem;
-        font-size: 0.95rem;
-        color: #6c757d;
-      }
-
-      /* Footer / CTA */
-      .footer-cta {
-        background-color: #343a40;
-        color: #fff;
-        padding: 2rem 0;
-        text-align: center;
-      }
-
-      .footer-cta h2 {
-        margin-bottom: 1rem;
-      }
-
-      .footer-cta p {
-        margin-bottom: 1.5rem;
-      }
-    </style>
+    <link rel="stylesheet" href="media/style.css" />
   </head>
   <body>
     <!-- Hero Section -->
@@ -148,145 +44,256 @@
 
     <!-- Packages Section -->
     <section id="packages" class="container py-5">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">الباقات المتوفرة</h2>
-        <p class="text-muted">اختر الباقة التي تناسب هدفك وميزانيتك</p>
+      <div
+        class="text-center mb-5 position-relative overflow-hidden animate__animated animate__fadeIn"
+      >
+        <!-- خلفية متدرجة -->
+        <div
+          class="position-absolute top-0 start-0 w-100 h-100 gradient-bgg"
+        ></div>
+
+        <!-- المحتوى -->
+        <div class="position-relative py-5">
+          <h2 class="fw-bold text-white mb-3">الباقات المتوفرة</h2>
+          <p class="text-light mb-0">اختر الباقة التي تناسب هدفك وميزانيتك</p>
+        </div>
       </div>
+      
       <div class="row g-4">
         <!-- Package 1 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 package-card">
-            <div class="card-body">
-              <h5 class="card-title mb-3">الباقة الأولى: الأسبوعية (7 أيام)</h5>
-              <h6 class="text-success mb-3">السعر: 1500 درهم مغربي</h6>
-              <ul class="list-unstyled mb-3">
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> منشورين يومياً
-                  (1 صورة تصميمية + 1 فيديو قصير)
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> محتوى سريع
-                  التأثير يُبرز التسويق الشبكي
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> ميزانية
-                  إعلانات 300 درهم طوال الأسبوع
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> استهداف جغرافي
-                  داخل المغرب
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> إمكانية تفعيل
-                  تيك توك عند الحاجة
-                </li>
-              </ul>
-              <p class="card-text">
-                <strong>الاستراتيجية:</strong> حملة مكثفة وسريعة للتعريف
-                بالمنتج، ورسائل ترويجية قصيرة لجذب الاهتمام.
-              </p>
-              <p class="card-text">
-                <strong>خدمات إضافية:</strong> إنشاء صفحات احترافية على فيسبوك
-                وإنستغرام، إمكانية شراء متابعين.
-              </p>
-              <p class="card-text">
-                <strong>العرض الترويجي:</strong> خصم 10% عند الاشتراك لأول مرة
-                أو تصميم منشور إضافي مجاناً.
-              </p>
+          <div
+            class="card h-100 package-card shadow-lg border-0 animate__animated animate__fadeIn"
+          >
+            <div class="card-body position-relative overflow-hidden">
+              <!-- Gradient Background -->
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 gradient-bg"
+              ></div>
+
+              <div class="content-wrapper position-relative">
+                <!-- العنوان -->
+                <h5 class="card-title mb-3 text-white fw-bold">
+                  الباقة الأولى: الأسبوعية (7 أيام)
+                </h5>
+
+                <!-- السعر -->
+                <div
+                  class="price-tag bg-white text-primary p-3 rounded-pill mb-4"
+                >
+                  <h6 class="mb-0 fw-bold">1500 درهم مغربي</h6>
+                </div>
+
+                <!-- قائمة المميزات -->
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    منشورين يومياً (1 صورة تصميمية + 1 فيديو قصير)
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    محتوى سريع التأثير يُبرز التسويق الشبكي
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    ميزانية إعلانات 300 درهم طوال الأسبوع
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    استهداف جغرافي داخل المغرب
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    إمكانية تفعيل تيك توك عند الحاجة
+                  </li>
+                </ul>
+
+                <!-- قسم الاستراتيجية والخدمات الإضافية -->
+                <div
+                  class="features-section bg-white bg-opacity-10 p-3 rounded-3 mb-4"
+                >
+                  <p class="card-text text-white">
+                    <strong class="text-warning">الاستراتيجية:</strong>
+                    حملة مكثفة وسريعة للتعريف بالمنتج، ورسائل ترويجية قصيرة لجذب
+                    الاهتمام.
+                  </p>
+                  <p class="card-text text-white">
+                    <strong class="text-warning">خدمات إضافية:</strong>
+                    إنشاء صفحات احترافية على فيسبوك وإنستغرام، إمكانية شراء
+                    متابعين.
+                  </p>
+                  <p class="card-text text-white">
+                    <strong class="text-warning">العرض الترويجي:</strong>
+                    خصم 10% عند الاشتراك لأول مرة أو تصميم منشور إضافي مجاناً.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-              <button class="btn btn-outline-primary">اشترك الآن</button>
+
+            <!-- زر الاشتراك -->
+            <div class="card-footer bg-transparent border-0 text-center p-4">
+              <button
+                class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__pulse animate__infinite"
+              >
+                اشترك الآن
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Package 2 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 package-card">
-            <div class="card-body">
-              <h5 class="card-title mb-3">
-                الباقة الثانية: نصف شهرية (15 يوماً)
-              </h5>
-              <h6 class="text-success mb-3">السعر: 3000 درهم مغربي</h6>
-              <ul class="list-unstyled mb-3">
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> منشورين يومياً
-                  (صور احترافية + فيديوهات قصيرة + منشورات قصصية)
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> بناء سردية حول
-                  التسويق الشبكي
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> ميزانية
-                  إعلانات 700 درهم على مدار 15 يوماً
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> استخدام فيسبوك
-                  وإنستغرام وتيك توك
-                </li>
-              </ul>
-              <p class="card-text">
-                <strong>الاستراتيجية:</strong> “التثقيف والإلهام” عبر مشاركة
-                معلومات أساسية عن التسويق الشبكي وتحفيز الجمهور بالقصص والنتائج.
-              </p>
-              <p class="card-text">
-                <strong>خدمات إضافية:</strong> إنشاء صفحات وحسابات جديدة، خيار
-                شراء المتابعين لتعزيز الحضور الرقمي.
-              </p>
-              <p class="card-text">
-                <strong>العرض الترويجي:</strong> استشارة مجانية لمدة 30 دقيقة
-                حول استراتيجيات التسويق أو تحليل منافسين مجاني.
-              </p>
+          <div
+            class="card h-100 package-card shadow-lg border-0 animate__animated animate__fadeIn"
+          >
+            <div class="card-body position-relative overflow-hidden">
+              <!-- Gradient Background -->
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 gradient-bg"
+              ></div>
+
+              <div class="content-wrapper position-relative">
+                <!-- العنوان -->
+                <h5 class="card-title mb-3 text-white fw-bold">
+                  الباقة الثانية: نصف شهرية (15 يوماً)
+                </h5>
+
+                <!-- السعر -->
+                <div
+                  class="price-tag bg-white text-primary p-3 rounded-pill mb-4"
+                >
+                  <h6 class="mb-0 fw-bold">3000 درهم مغربي</h6>
+                </div>
+
+                <!-- قائمة المميزات -->
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    منشورين يومياً (صور احترافية + فيديوهات قصيرة + منشورات
+                    قصصية)
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    بناء سردية حول التسويق الشبكي
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    ميزانية إعلانات 700 درهم على مدار 15 يوماً
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    استخدام فيسبوك وإنستغرام وتيك توك
+                  </li>
+                </ul>
+
+                <!-- قسم الاستراتيجية والخدمات الإضافية -->
+                <div
+                  class="features-section bg-white bg-opacity-10 p-3 rounded-3 mb-4"
+                >
+                  <p class="card-text text-white">
+                    <strong class="text-warning">الاستراتيجية:</strong>
+                    “التثقيف والإلهام” عبر مشاركة معلومات أساسية عن التسويق
+                    الشبكي وتحفيز الجمهور بالقصص والنتائج.
+                  </p>
+                  <p class="card-text text-white">
+                    <strong class="text-warning">خدمات إضافية:</strong>
+                    إنشاء صفحات وحسابات جديدة، خيار شراء المتابعين لتعزيز الحضور
+                    الرقمي.
+                  </p>
+                  <p class="card-text text-white">
+                    <strong class="text-warning">العرض الترويجي:</strong>
+                    استشارة مجانية لمدة 30 دقيقة حول استراتيجيات التسويق أو
+                    تحليل منافسين مجاني.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-              <button class="btn btn-outline-primary">اشترك الآن</button>
+
+            <!-- زر الاشتراك -->
+            <div class="card-footer bg-transparent border-0 text-center p-4">
+              <button
+                class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__pulse animate__infinite"
+              >
+                اشترك الآن
+              </button>
             </div>
           </div>
         </div>
 
         <!-- Package 3 -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 package-card">
-            <div class="card-body">
-              <h5 class="card-title mb-3">
-                الباقة الثالثة: الشهرية (30 يوماً)
-              </h5>
-              <h6 class="text-success mb-3">السعر: 5000 درهم مغربي</h6>
-              <ul class="list-unstyled mb-3">
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> 3 منشورات
-                  يومياً (تفاعلية، تعليمية، احترافية، قصص نجاح)
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> مسابقات أو
-                  تحديات بسيطة لجذب المتابعين
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> ميزانية
-                  إعلانات 1500 درهم على مدار الشهر
-                </li>
-                <li>
-                  <i class="fa fa-check-circle text-primary"></i> استخدام
-                  فيسبوك، إنستغرام، تيك توك، يوتيوب
-                </li>
-              </ul>
-              <p class="card-text">
-                <strong>الاستراتيجية:</strong> بناء هوية رقمية قوية، بث مباشر
-                أسبوعي للرد على الاستفسارات، تحليل النتائج وتقديم تقارير
-                أسبوعية.
-              </p>
-              <p class="card-text">
-                <strong>خدمات إضافية:</strong> إنشاء الصفحات الرسمية على كل
-                المنصات عند الحاجة، إمكانية شراء المتابعين.
-              </p>
-              <p class="card-text">
-                <strong>العرض الترويجي:</strong> خصم 15% للعملاء الجدد أو إضافة
-                3 أيام مجانية في نهاية الحملة.
-              </p>
+          <div
+            class="card h-100 package-card shadow-lg border-0 animate__animated animate__fadeIn"
+          >
+            <div class="card-body position-relative overflow-hidden">
+              <!-- Gradient Background -->
+              <div
+                class="position-absolute top-0 start-0 w-100 h-100 gradient-bg"
+              ></div>
+
+              <div class="content-wrapper position-relative">
+                <!-- العنوان -->
+                <h5 class="card-title mb-3 text-white fw-bold">
+                  الباقة الثالثة: الشهرية (30 يوماً)
+                </h5>
+
+                <!-- السعر -->
+                <div
+                  class="price-tag bg-white text-primary p-3 rounded-pill mb-4"
+                >
+                  <h6 class="mb-0 fw-bold">5000 درهم مغربي</h6>
+                </div>
+
+                <!-- قائمة المميزات -->
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    3 منشورات يومياً (تفاعلية، تعليمية، احترافية، قصص نجاح)
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    مسابقات أو تحديات بسيطة لجذب المتابعين
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    ميزانية إعلانات 1500 درهم على مدار الشهر
+                  </li>
+                  <li class="mb-3 d-flex align-items-center text-white">
+                    <i class="fas fa-check-circle me-2 text-warning"></i>
+                    استخدام فيسبوك، إنستغرام، تيك توك، يوتيوب
+                  </li>
+                </ul>
+
+                <!-- قسم الاستراتيجية والخدمات الإضافية -->
+                <div
+                  class="features-section bg-white bg-opacity-10 p-3 rounded-3 mb-4"
+                >
+                  <p class="card-text text-white">
+                    <strong class="text-warning">الاستراتيجية:</strong>
+                    بناء هوية رقمية قوية، بث مباشر أسبوعي للرد على الاستفسارات،
+                    تحليل النتائج وتقديم تقارير أسبوعية.
+                  </p>
+                  <p class="card-text text-white">
+                    <strong class="text-warning">خدمات إضافية:</strong>
+                    إنشاء الصفحات الرسمية على كل المنصات عند الحاجة، إمكانية
+                    شراء المتابعين.
+                  </p>
+                  <p class="card-text text-white">
+                    <strong class="text-warning">العرض الترويجي:</strong>
+                    خصم 15% للعملاء الجدد أو إضافة 3 أيام مجانية في نهاية
+                    الحملة.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="card-footer bg-transparent border-0 text-center">
-              <button class="btn btn-outline-primary">اشترك الآن</button>
+
+            <!-- زر الاشتراك -->
+            <div class="card-footer bg-transparent border-0 text-center p-4">
+              <button
+                class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-bold animate__animated animate__pulse animate__infinite"
+              >
+                اشترك الآن
+              </button>
             </div>
           </div>
         </div>
